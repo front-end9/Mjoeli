@@ -1,0 +1,16 @@
+//-
+    name: payment-thank
+    description: Markup for the payment-thank block
+    arguments:
+        - {object} props - block properties
+
+mixin payment-thank(props = {})
+    .payment-thank&attributes(attributes)
+        h2.payment-thank__title Thank you
+        h2.payment-thank__title-border Thank you
+        p.payment-thank__subtitle Your payment $158.00 has been processed successfully! An order confirmations has been send to : test_email@ex_test_email
+        p.payment-thank__subtitle-second For your reference, your transaction id is: 458796231
+        a.payment-thank__button continue shopping
+        a.payment-thank__button-white return to shopping card
+
+
