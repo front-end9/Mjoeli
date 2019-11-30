@@ -1,0 +1,38 @@
+/**
+ * Styles for the uberuns block.
+ */
+.uberuns {
+
+    &__title {
+        position: absolute;
+        left: 777px;
+        top: 8050px;
+
+        font-family: 'Bebas Neue';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 300px;
+        line-height: 300px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+
+        border: 1px solid #222222;
+    }
+    // Selector styles
+    // TODO: add code
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // BEM modifiers
+    // TODO: add code
+}
