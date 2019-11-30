@@ -1,6 +1,7 @@
 extends ../layouts/base.pug
 
 //- TODO: include page-specific block templates
-
+include ../../blocks/common/blog/blog.pug
 block page
     //- TODO: add code
+    +blog(data)

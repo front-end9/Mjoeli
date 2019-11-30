@@ -1,0 +1,122 @@
+/**
+ * Styles for the blog block.
+ */
+.blog {
+
+    // Selector styles
+    // TODO: add code
+    &__start {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-bottom: 70px;
+    }
+
+    &__title {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 60px;
+        line-height: 60px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #222222;
+    }
+
+    &__col {
+        display: flex;
+    }
+
+    &__main {
+        display: flex;
+        padding-top: 70px;
+    }
+
+    &__desc {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__name {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 36px;
+        line-height: 36px;
+        letter-spacing: 0.02em;
+        text-transform: capitalize;
+        color: #222222;
+    }
+
+    &__subname {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        font-weight: 300;
+        font-size: 18px;
+        line-height: 30px;
+        color: #222222;
+    }
+
+    &__info {
+        display: flex;
+        padding: 70px 77px 0 138px;
+    }
+
+    &__data {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 30px;
+        line-height: 30px;
+        text-transform: capitalize;
+        color: #C3AA5B;
+    }
+
+    &__photo {
+        display: flex;
+        justify-content: space-between;
+        margin: 15px;
+    }
+
+    &__end {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__button {
+        font-family: 'Josefin Sans', sans-serif;
+        font-style: normal;
+        text-align: center;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 14px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        width: 193px;
+        height: 45px;
+        color: #222222;
+        border: 0.8px solid #222222;
+        box-sizing: border-box;
+        background: transparent;
+        margin-top: 70px;
+        margin-bottom: 227px;
+    }
+
+    // @media queries
+    // TODO: add code
+
+    // Pseudo-classes and pseudo-elements
+    // TODO: add code
+    &__button:hover {
+        background-color: #222222;
+        color: #fff;
+        transition: all .3s ease;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    // Nested selectors
+    // TODO: add code
+
+    // BEM elements
+    // TODO: add code
+
+    // BEM modifiers
+    // TODO: add code
+}
