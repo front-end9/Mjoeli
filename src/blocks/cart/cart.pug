@@ -1,0 +1,10 @@
+//-
+    name: cart
+    description: Markup for the cart block
+    arguments:
+        - {object} props - block properties
+
+mixin cart(props = {})
+    .cart&attributes(attributes)
+        .container
+            .cart__header.header

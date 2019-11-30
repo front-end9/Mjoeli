@@ -1,6 +1,8 @@
 extends ../layouts/base.pug
 
 //- TODO: include page-specific block templates
-
+include ../../blocks/cart/cart.pug
 block page
+    
     //- TODO: add code
+    +cart(data)
