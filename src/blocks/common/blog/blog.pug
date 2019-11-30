@@ -6,26 +6,29 @@
 
 mixin blog(props = {})
     .blog&attributes(attributes)
-        .blog__start
-            h2.blog__title Blog
-        .blog__col
-            .blog__box
-                .blog__photo
-                    img(src="img/blog.png", alt="blog")
-                .blog__main
-                    .blog__info
-                        span.blog__data 13/09
-                    .blog__desc
-                        h3.blog__name The most fashionable trousers of the fall-winter season 2019/2020
-                        p.blog__subname It has long been found that when evaluating design and composition, readable text makes it difficult to concentrate. Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text the prevailing view.
-            .blog__box
-                .blog__photo
-                    img(src="img/blog2.png", alt="blog")
-                .blog__main
-                    .blog__info
-                        span.blog__data 29/09
-                    .blog__desc
-                        h3.blog__name 10 mini dresses in which it is so pleasant to spend summer
-                        p.blog__subname It has long been found that when evaluating design and composition, readable text makes it difficult to concentrate. Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text the prevailing view.
-        .blog__end
-            button.blog__button(type="submit") Show all                                               
+        .container
+            .blog__start
+                h2.blog__title Blog
+            .row
+                .col-6
+                    .blog__box
+                        .blog__photo
+                            img(src="img/blog.png", alt="blog")
+                        .blog__main
+                            .blog__info
+                                span.blog__data 13/09
+                            .blog__desc
+                                h3.blog__name The most fashionable trousers of the fall-winter season 2019/2020
+                                p.blog__subname It has long been found that when evaluating design and composition, readable text makes it difficult to concentrate. Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text the prevailing view.
+                .col-6
+                    .blog__box
+                        .blog__photo
+                            img(src="img/blog2.png", alt="blog")
+                        .blog__main
+                            .blog__info
+                                span.blog__data 29/09
+                            .blog__desc
+                                h3.blog__name 10 mini dresses in which it is so pleasant to spend summer
+                                p.blog__subname It has long been found that when evaluating design and composition, readable text makes it difficult to concentrate. Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text the prevailing view.
+            .blog__end
+                button.blog__button(type="submit") Show all                                               
