@@ -1,0 +1,15 @@
+//-
+    name: header
+    description: Markup for the header block
+    arguments:
+        - {object} props - block properties
+
+mixin header(props = {})
+    .header&attributes(attributes)
+        h1.header__title sdjhfsdjf
+        +icon("search")
+        +icon("user")
+        +icon("phone")
+        +icon("bag")
+        +icon("favorite")
+        +nav(props.nav)

@@ -1,4 +1,17 @@
 {
     "siteTitle": "Site Title",
-    "siteTagline": "Site Tagline"
+    "siteTagline": "Site Tagline",
+    "nav": [{
+        "text": "Shop",
+        "link": "#"
+    }, {
+        "text": "Blog",
+        "link": "#"
+    }, {
+        "text": "About us",
+        "link": "#"
+    }, {
+        "text": "Сontacts",
+        "link": "#"
+    }]
 }

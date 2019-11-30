@@ -1,0 +1,13 @@
+//-
+    name: nav
+    description: Markup for the nav block
+    arguments:
+        - {object} props - block properties
+
+mixin nav(props = {})
+    nav.nav&attributes(attributes)
+        button.nav__burger
+        ul.nav__list
+            each item in props
+                li.nav__item
+                    a(href=item.link).nav__link= item.text
