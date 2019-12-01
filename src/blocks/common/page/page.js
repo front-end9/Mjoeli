@@ -4,6 +4,7 @@
 
 import { debounce, throttle } from '../../../js/util/index';
 import * as LazyLoader from '../../../js/util/lazy-loader';
+import { filter } from '../../filter/filter';
 
 // TODO: import other blocks
 
@@ -49,6 +50,7 @@ export function initBlock() {
     LazyLoader.init();
 
     // TODO: initialize other blocks
+    filter.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();

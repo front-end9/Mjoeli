@@ -1,0 +1,9 @@
+//-
+    name: filter
+    description: Markup for the filter block
+    arguments:
+        - {object} props - block properties
+
+mixin filter(props = {})
+    .filter&attributes(attributes)
+        h2.filter__title= props.title
