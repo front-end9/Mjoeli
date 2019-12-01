@@ -1,4 +1,7 @@
 @import "variables";
+
+@import "../../node_modules/bootstrap/scss/bootstrap-grid.scss";
+
 @import "mixins";
 @import "fonts";
 @import "base";
@@ -6,7 +9,7 @@
 // TODO: include third-party styles
 
 @import "../blocks/common/page/page.scss";
-@import "../blocks/cart/cart.scss";
 
 
 // TODO: include other block styles
+@import "../blocks/cart/cart.scss";
