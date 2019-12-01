@@ -8,7 +8,7 @@ mixin blog(props = {})
     .blog&attributes(attributes)
         .container
             .blog__start
-                h2.blog__title Blog
+                h2.blog__title= props.title
             .row
                 .col-6
                     .blog__box
@@ -31,4 +31,4 @@ mixin blog(props = {})
                                 h3.blog__name 10 mini dresses in which it is so pleasant to spend summer
                                 p.blog__subname It has long been found that when evaluating design and composition, readable text makes it difficult to concentrate. Until recently, the prevailing view assumed lorem ipsum was born as a nonsense text the prevailing view.
             .blog__end
-                button.blog__button(type="submit") Show all                                               
+                button.blog__button(type="submit") Show all
