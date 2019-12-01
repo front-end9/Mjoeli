@@ -24,7 +24,6 @@
 
     &__main {
         display: flex;
-        padding-top: 70px;
     }
 
     &__desc {
@@ -37,9 +36,9 @@
         font-family: 'Bebas Neue', sans-serif;
         font-size: 36px;
         line-height: 36px;
-        letter-spacing: 0.02em;
         text-transform: capitalize;
         color: #222222;
+        padding-top: 70px;
     }
 
     &__subname {
@@ -49,6 +48,7 @@
         font-size: 18px;
         line-height: 30px;
         color: #222222;
+        padding-top: 12px;
     }
 
     &__info {
@@ -96,6 +96,76 @@
 
     // @media queries
     // TODO: add code
+    @media only screen and (max-width: 769px) {
+        &__start {
+            padding-bottom: 73px;
+        }
+
+        &__title {
+            font-size: 38px;
+        }
+
+        &__name {
+            padding-top: 64px;
+            font-size: 32px;
+        }
+
+        &__subname {
+            padding-bottom: 70px;
+        }
+
+        &__info {
+
+            padding: 70px 86px 0 117px;
+        }
+
+        &__button {
+            margin-top: 22px;
+        }
+    }
+
+    @media only screen and (max-width: 426px) {
+        &__start {
+            padding-bottom: 36px;
+        }
+
+        &__title {
+            font-size: 30px;
+            line-height: 30px;
+        }
+
+        &__info {
+            padding: 24px 20px;
+            position: absolute;
+        }
+
+        &__desc {
+            display: flex;
+            position: relative;
+            margin-left: 50px;
+            margin-right: 20px;
+        }
+
+        &__name {
+            font-size: 28px;
+            line-height: 28px;
+        }
+
+        &__subname {
+            padding-top: 4px;
+            font-size: 14px;
+            line-height: 24px;
+            padding-bottom: 65px;
+        }
+
+        &__subname:nth-child(2) {
+            padding-bottom: 56px;
+        }
+
+        &__button {
+            margin-top: 0;
+        }
+    }
 
     // Pseudo-classes and pseudo-elements
     // TODO: add code
