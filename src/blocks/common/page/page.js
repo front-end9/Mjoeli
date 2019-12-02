@@ -2,15 +2,21 @@
  * @file Implementation of the page block
  */
 
-import { debounce, throttle } from '../../../js/util/index';
+import {
+    debounce,
+    throttle
+} from '../../../js/util/index';
 import * as LazyLoader from '../../../js/util/lazy-loader';
+import {
+    contact
+} from '../../contact/contact';
 
 // TODO: import other blocks
 
 // -------------------------- BEGIN MODULE VARIABLES --------------------------
 
-const RESIZE_INTERVAL = 200;    // Resize event debouncing interval
-const SCROLL_INTERVAL = 200;    // Scroll event throttling interval
+const RESIZE_INTERVAL = 200; // Resize event debouncing interval
+const SCROLL_INTERVAL = 200; // Scroll event throttling interval
 
 // --------------------------- END MODULE VARIABLES ---------------------------
 
@@ -49,6 +55,7 @@ export function initBlock() {
     LazyLoader.init();
 
     // TODO: initialize other blocks
+    contact.initBlock();
 
     // Process the initial window size and scroll position
     handleWindowResize();

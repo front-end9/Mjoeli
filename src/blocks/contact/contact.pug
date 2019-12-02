@@ -1,0 +1,56 @@
+//-
+    name: contact
+    description: Markup for the contact block
+    arguments:
+        - {object} props - block properties
+
+mixin contact(props = {})
+    .contact&attributes(attributes) 
+        .container
+            .row
+                .col-4 
+                    .contact__plate
+                        .contact__icon 
+                            +icon("address")
+                        .contact__subtitle
+                            p location
+                        .contact__text
+                            p Richard-Wagner-Straße 48, 95444 Bayreuth, Germany
+                .col-4
+                     .contact__plate
+                        .contact__icon 
+                            +icon("mail-send")
+                        .contact__subtitle
+                            p location
+                        .contact__text
+                            p Richard-Wagner-Straße 48, 95444 Bayreuth, Germany
+                .col-4
+                    .contact__plate
+                        .contact__icon 
+                            +icon("phone-call")
+                        .contact__subtitle
+                            p location
+                        .contact__text
+                            p Richard-Wagner-Straße 48, 95444 Bayreuth, Germany
+        .container
+            .row  
+                 .col-1
+                    .contact__plate-icon
+                        +icon("facebook")
+                        +icon("instagram")
+                        +icon("youtubep")
+                        +icon("pinterest")
+                 .col-5
+                    .contat__form-plate
+                        .contat__form-title contact us
+                        .contat__form-field
+                            form(action="", method="get")
+                                input(type="text", required, placeholder="Name", class="contact__input")
+                                input(type="email", required,  placeholder="E-mail", name="email", class="contact__input")
+                                textarea(placeholder="Messge", required name="massge", class="contact__input")
+                                button(class="contact__button") SEND
+                 .col-6  
+                    .map(id="map")
+
+
+    
