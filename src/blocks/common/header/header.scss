@@ -4,7 +4,51 @@
 .header {
     // Selector styles
     // TODO: add code
+    &__wrapper {
+        background: #F3F6FB;
+        box-shadow: 0px 6px 9px rgba(0, 0, 0, 0.25);
+        border-bottom-left-radius: 20px;        
+        border-bottom-right-radius: 20px;
 
+        @media screen and (min-width: 765px){
+            border-bottom-left-radius: 50px;        
+            border-bottom-right-radius: 50px;
+
+        }
+    }
+    &__inner{
+        padding: 0 15px;
+        height: 70px;
+        width: 100%;
+
+        @media screen and (min-width: 767px){
+            height: 144px;    
+        }
+    }
+    &__logo {
+        flex: 3;
+        width: 94px;
+
+    }
+    &__logo-icon {
+        width: 89px;
+        height: 89px;
+        fill: linear-gradient(270deg, #5D4DF9 0%, #DA055A 100%);;
+    }
+
+    &__logo-text {
+        width: 100%;
+        height: 100%;
+        max-width: 94px;
+        max-height: 11px;
+        color: #007799;
+
+        @media screen and (min-width: 767px) {
+            
+        }
+       
+    }
+    
     // @media queries
     // TODO: add code
 
@@ -20,3 +64,5 @@
     // BEM modifiers
     // TODO: add code
 }
+
+

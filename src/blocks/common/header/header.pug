@@ -6,10 +6,14 @@
 
 mixin header(props = {})
     .header&attributes(attributes)
-        h1.header__title sdjhfsdjf
-        +icon("search")
-        +icon("user")
-        +icon("phone")
-        +icon("bag")
-        +icon("favorite")
-        +nav(props.nav)
+        .header__wrapper
+            .container
+                .row
+                    .col-12.col-md-12.d-flex.col-xl-12
+                        .header__inner.d-flex.justify-content-between.align-items-center
+                            .header__logo.d-flex.flex-column.align-items-md-center
+                                a.header__logo-link(href='#')
+                                    +icon('logo__icon').header__logo-icon.d-none.d-md-block
+                                    +icon('logo__text').header__logo-text
+                            +nav
+                    

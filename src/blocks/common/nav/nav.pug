@@ -5,9 +5,18 @@
         - {object} props - block properties
 
 mixin nav(props = {})
-    nav.nav&attributes(attributes)
-        button.nav__burger
-        ul.nav__list
-            each item in props
-                li.nav__item
-                    a(href=item.link).nav__link= item.text
+    nav.nav&attributes(attributes).d-md-flex.align-items-md-center
+        .nav__links.d-md-none
+            a.nav__link-call
+                +icon('phone').nav__link-icon
+            a.nav__link-burger
+                +icon('burger').nav__link-icon
+        ul.nav__list.d-none.d-md-block.d-md-flex.align-items-md-center
+            li.nav__item
+                a.nav__link-list(href='#') О нас
+            li.nav__item
+                a.nav__link-list(href='#') Наши услуги
+            li.nav__item
+                a.nav__link-list(href='#') Контакты
+            li.nav__item-call
+                a.nav__link-call(href='#') Перезвонить
