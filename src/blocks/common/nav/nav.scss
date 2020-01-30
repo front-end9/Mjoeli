@@ -4,71 +4,7 @@
 .nav {
     // Selector styles
     // TODO: add code
-    &__list{
-        margin-left: 90px;
-
-        @media screen and (min-width: 1024px) {
-            margin: 0px 0px 0px 300px;
-        }
-        @media screen and (min-width: 1140px) {
-            margin: 0px 0px 0px 400px;
-            font-family: Open Sans;
-            font-style: normal;
-            font-weight: bold;
-            font-size: 18px;
-            line-height: 25px;
-        }
-    }
-    &__link-icon {
-        color: #007799;
-        width: 100%;
-        height: 100%;
-        max-width: 23px;
-        max-height: 23px;
-    }
-
-    &__link-burger {
-        padding-left: 32px;
-    }
-
-    &__links {
-        text-decoration: none;
-        
-    }
-    &__links:visited {
-        text-decoration: none;
-    }
-
-    &__link-list {
-        outline: none;
-        color: black;
-        font-family: Open Sans;
-        font-size: 16px;
-        text-decoration: none;
-    }
-    &__link-call {
-        color: #005C71;
-        text-decoration: none;
-    }
-
-    &__item {
-        padding-right: 30px;
-
-        @media screen and (min-width: 1140px) {
-
-        }
-
-    }
-    &__item-call {
-        border: 3px solid #005C71;
-        border-radius: 30px;
-        color: #007799;
-        padding: 10px 25px;
-    }
     
-
-    
-
     // @media queries
     // TODO: add code
 
